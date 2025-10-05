@@ -1,2 +1,0 @@
-# veb-project
-veb project
