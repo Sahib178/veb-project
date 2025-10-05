@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8">
+  <title>Python Haqqında Məlumat</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #007BFF, #FFD700);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #222;
+    }
+
+    .content {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 900px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 25px;
+      color: #333;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    pre {
+      background: #1e1e1e;
+      color: #00ff88;
+      text-align: left;
+      padding: 15px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Python Haqqında Məlumat</h1>
+    <p>
+      Python sadə sintaksisə malikdir və yeni başlayanlar üçün çox münasib proqramlaşdırma dilidir.  
+      Aşağıda Python ilə yazılmış bəzi <b>sadə proqram nümunələri</b> verilmişdir:
+    </p>
+
+    <h2>1. Ədədin cüt və ya tək olduğunu tapmaq</h2>
+    <pre>
+num = int(input("Ədədi daxil et: "))
+
+if num % 2 == 0:
+    print("Bu ədəd cütdür.")
+else:
+    print("Bu ədəd təkdir.")
+    </pre>
+
+    <h2>2. Ədədin rəqəmlərinin cəmini tapmaq</h2>
+    <pre>
+num = int(input("Ədədi daxil et: "))
+cem = 0
+
+while num > 0:
+    cem += num % 10
+    num //= 10
+
+print("Rəqəmlərin cəmi:", cem)
+    </pre>
+
+    <h2>3. Fibonacci ədədləri</h2>
+    <pre>
+n = int(input("Neçə Fibonacci ədədi göstərilsin? "))
+
+a, b = 0, 1
+for i in range(n):
+    print(a)
+    a, b = b, a + b
+    </pre>
+
+    <h2>4. Faktorial hesablayan proqram</h2>
+    <pre>
+def faktorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * faktorial(n - 1)
+
+num = int(input("Ədədi daxil et: "))
+print("Faktorial:", faktorial(num))
+    </pre>
+
+    <h2>5. Sözün palindrom olub-olmadığını yoxlamaq</h2>
+    <pre>
+soz = input("Sözü daxil et: ")
+
+if soz == soz[::-1]:
+    print("Bu söz palindromdur.")
+else:
+    print("Bu söz palindrom deyil.")
+    </pre>
+
+  </div>
+</body>
+</html>
